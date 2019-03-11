@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Web Editor</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+	<style type="text/css">
+		
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		#container {
+
+			height: 100%;
+			width: auto;
+			white-space: nowrap;
+			overflow: hidden;
+			position: relative;
+
+		}
+
+		#htmleditor{
+
+			height: 100%;
+			min-height: 50vh;
+			width: 33%;
+			display: inline-block;
+		}
+
+		#csseditor{
+
+			height: 100%;
+			min-height: 50vh;
+			width: 33%;
+			display: inline-block;
+		}
+
+		#jseditor{
+
+			height: 100%;
+			min-height: 50vh;
+			width: 33%;
+			display: inline-block;
+		}
+
+
+
+		#result{
+
+			position: relative;
+			bottom: 0;
+			width: 1895px;
+			height: 730px;
+			margin-top: 15px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+
+	</style>
+<body>
+
+	<nav class="navbar navbar-dark bg-dark">
+  		<a class="navbar-brand" href="paginaprincipal2.html">CODEDZU</a>
+	</nav>
+
+
+	<div id="container">
+		<div id="htmleditor" style="margin-left: 5px;"></div>
+
+		<div id="csseditor" style=""></div>
+
+		<div id="jseditor" style="margin-top: 10px; margin-right: 10px;"></div>
+	</div>
+
+	<hr>
+
+	<iframe id="result" frameborder="0"></iframe>
+
+
+
+	<script src="js/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

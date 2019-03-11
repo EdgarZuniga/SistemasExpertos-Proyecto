@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pagina Principal</title>
+	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/creative.css" rel="stylesheet">
+    <script src="js/creative.min.js"></script>
+    <script src="js/Scroll.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">CODEDZU</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="suscripciones.html">Suscripciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="adminPerfil.html">Administrar Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="crearSnippet.html">Crear Snippet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="crearproyecto.html">Crear Proyecto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="margin-top: 100px; margin-left: 70px;">
+    	<h1 style="color: white;">Pagina Principal</h1>
+        <hr size="">
+    </div>
+    <div  class="container-fluid" id="GridVideos">
+		<div class="row" style="margin-top: 70px;">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" id="video" style="background-color:  white; margin-top: 20px; margin-right: 70px; margin-left: 70px; border-radius: 10px;" >
+                <section style="width: 160px; height: 450px; margin-left: auto; margin-right: auto;">
+                    <img src="img/carpeta.png" style="width: 160px; height: 100px; border-radius: 3px;">
+                    <h1 style="width: 160px; font-size: medium; margin-top:20px; color: black; font-style: italic; text-align: center;">Mis Proyectos</h1>
+                    <button type="button" class="boton boton-rojo" onclick="location='misproyectos.html'" style="margin-top: 40px;">Ingresar</button>
+                </section>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" id="video" style="background-color: white; margin-top: 20px; margin-right: 70px; margin-left: 70px; border-radius: 10px;">
+                <section style="width: 160px; height: 450px; margin-left: auto; margin-right: auto;">
+                    <img src="img/carpeta.png" style="width: 160px; height: 100px; border-radius: 3px;">
+                    <h5 style="width: 160px; margin-top:20px; font-size: medium; color: black; font-style: italic; text-align: center;">Snippets</h5>
+                    <button type="button" class="boton boton-rojo" onclick="location='missnippets.html'"  style="margin-top: 40px;">Ingresar</button>
+                </section>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" id="video" style="background-color: white; margin-top: 20px; margin-left: 70px; border-radius: 10px;">
+                <section style="width: 160px; height: 450px; margin-left: auto; margin-right: auto;">
+                    <img src="img/carpeta.png" style="width: 160px; height: 100px; border-radius: 3px;">
+                    <h5 style="width: 160px; font-size: medium; margin-top:20px; color: black; font-style: italic; text-align: center;">Proy. Compartidos</h5>
+                    <button type="button" class="boton boton-rojo" onclick="location='proyectoscompartidos.html'"  style="margin-top: 35px;">Ingresar</button>
+                </section>
+            </div>
+        </div>
+	</div>
+
+    
+</body>
+</html>

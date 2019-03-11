@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snippet Editor</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style type="text/css">
+	
+	html,body { margin:0; padding:0; height:100%; width:100%; overflow: hidden;}
+
+	#editor {
+    	height: 100%;
+    	width:50%;
+    	margin-left:450px;
+    	border-radius: 10px;
+ 		background-color: rgb(112, 106, 106,0.5);
+ 		margin-top: 35px;
+    
+
+	}
+
+	#container {
+  		margin-top:35px;
+		height:85%;
+		width:auto;
+  		white-space : nowrap; 
+  		overflow : hidden;
+  		position:relative;
+  		background-image: url("img/fondosnippet3.png");
+  		margin-bottom: 50px;
+  		padding-bottom: 85px;
+
+
+	}
+
+	#iframe {
+		height:100%;
+		display:inline-block;
+		width:50%;
+	}
+
+/* disable tag matching */
+	.ace_editor .ace_marker-layer .ace_bracket { display: none }
+
+
+</style>
+
+<body>
+
+	<nav class="navbar navbar-dark bg-dark">
+  		<a class="navbar-brand" href="paginaprincipal2.html">CODEDZU</a>
+	</nav>
+
+
+	<div id='container'>
+
+  		<div id="editor">
+  		</div>
+
+  		<button type="button" class="btn btn-success" style="margin-left: 250px;">Guardar Snippet</button>
+
+  
+	</div>
+
+	<script type="text/javascript">
+		
+		function update()
+	{
+		var idoc = document.getElementById('iframe').contentWindow.document;
+
+		idoc.open();
+		idoc.write(editor.getValue());
+		idoc.close();
+	}
+
+		function setupEditor()
+	{
+  		window.editor = ace.edit("editor");
+  		editor.setTheme("ace/theme/monokai");
+  		editor.getSession().setMode("ace/mode/java");
+  		editor.setValue(); //1 = moves cursor to end
+
+  		editor.getSession().on('change', function() {
+    	update();
+  	});
+
+  		editor.focus();
+  
+  
+  		editor.setOptions({
+    	fontSize: "16pt",
+    	showLineNumbers: false,
+    	showGutter: false,
+    	vScrollBarAlwaysVisible:true,
+    	enableBasicAutocompletion: false, enableLiveAutocompletion: false
+  	});
+
+  		editor.setShowPrintMargin(false);
+  		editor.setBehavioursEnabled(false);
+	}
+
+		setupEditor();
+		update();
+
+
+	</script>
+
+
+</body>
+</html>
