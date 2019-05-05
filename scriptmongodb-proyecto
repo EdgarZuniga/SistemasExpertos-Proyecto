@@ -3,10 +3,10 @@ db.createCollection('documentos');
 db.createCollection('tipos');
 
 db.documentos.insertMany([{ "nombre" : "Documento1", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?", "tipo" : { "_id" : ObjectId("5ca3814381a123ccbd73abfc"), "nombre" : "Personales" }},
-{ "nombre" : "Documento2", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","categoria" : { "_id" : ObjectId("5ca3813181a123ccbd73abfb"), "nombre" : "Compartidos" }},
-{ "nombre" : "Documento3", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","categoria" : { "_id" : ObjectId("5ca3813181a123ccbd73abfb"), "nombre" : "Compartidos" }},
-{ "nombre" : "Documento4", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","categoria" : { "_id" : ObjectId("5ca3810c81a123ccbd73abfa"), "nombre" : "Snippets" }},
-{ "nombre" : "Documento5", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","categoria" : { "_id" : ObjectId("5ca3814381a123ccbd73abfc"), "nombre" : "Personales" }},
+{ "nombre" : "Documento2", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","tipo" : { "_id" : ObjectId("5ca3813181a123ccbd73abfb"), "nombre" : "Compartidos" }},
+{ "nombre" : "Documento3", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","tipo" : { "_id" : ObjectId("5ca3813181a123ccbd73abfb"), "nombre" : "Compartidos" }},
+{ "nombre" : "Documento4", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","tipo" : { "_id" : ObjectId("5ca3810c81a123ccbd73abfa"), "nombre" : "Snippets" }},
+{ "nombre" : "Documento5", "descripcion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam cupiditate ullam voluptates. Iusto, asperiores?","tipo" : { "_id" : ObjectId("5ca3814381a123ccbd73abfc"), "nombre" : "Personales" }},
 { "nombre" : "Documento6", "descripcion" : "Prueba1","categoria" : { "_id" : "5ca3810c81a123ccbd73abfa", "nombre" : "Snippets" }}]);
 
 
